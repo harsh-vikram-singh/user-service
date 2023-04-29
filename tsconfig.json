@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",  // Use the latest ECMAScript target.
+    "module": "commonjs",  // Node.js uses the CommonJS module system.
+    "lib": ["ESNext"],  // Include the latest ECMAScript library files.
+    "outDir": "./dist",  // The directory where the compiled JavaScript files will be placed.
+    "rootDir": "./src",  // The root directory of your source files.
+    "strict": true,  // Enable all strict type-checking options.
+    "moduleResolution": "node",  // Use Node.js-style module resolution.
+    "esModuleInterop": true,  // Enable compatibility with Babel's module exports.
+    "forceConsistentCasingInFileNames": true,  // Enforce consistent casing in filenames.
+    "skipLibCheck": true  // Skip type checking of declaration files.
+  },
+  "include": ["src/**/*.ts"],  // Include TypeScript files in the 'src' directory.
+  "exclude": ["node_modules"]  // Exclude the 'node_modules' directory.
+}
