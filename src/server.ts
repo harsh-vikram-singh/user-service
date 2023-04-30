@@ -26,6 +26,10 @@ app.get('/', (req: Request, res: Response) => {
   res.send('user service is running');
 });
 
+app.get('/health', (req: Request, res: Response) => {
+  res.send('User service health status: OK');
+})
+
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`User-service server is runningon port ${port}`);
